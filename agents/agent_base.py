@@ -4,6 +4,7 @@ import os
 from loguru import logger
 from dotenv import load_dotenv
 import requests
+import json
 
 load_dotenv()
 
@@ -17,7 +18,7 @@ class AgentBase(ABC):
         self.max_retries = max_retries
         self.verbose = verbose
         self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-        self.ollama_model = os.getenv("OLLAMA_MODEL", "tinyllama")
+        self.ollama_model = os.getenv("OLLAMA_MODEL", "tinyllama:latest").strip('"')
         self.logger = logger
 
     @abstractmethod
@@ -34,6 +35,8 @@ class AgentBase(ABC):
                     self.logger.info(f"Model: {self.ollama_model}")
                     self.logger.info(f"Temperature: {temperature}")
                     self.logger.info(f"Max tokens: {max_tokens}")
+                    self.logger.info("Model being used: {self.ollama_model}")
+                    self.logger.info(f"Model path: {self.ollama_base_url}/api/chat")
                     self.logger.info("\nMessages:")
                     for msg in messages:
                         self.logger.info(f"\n[{msg['role'].upper()}]")
@@ -54,6 +57,16 @@ class AgentBase(ABC):
                         "stream": False  # Disable streaming to get a single response
                     }
                 )
+                
+                if response.status_code != 200:
+                    error_msg = f"HTTP {response.status_code}"
+                    try:
+                        error_json = response.json()
+                        error_msg += f": {json.dumps(error_json)}"
+                    except:
+                        error_msg += f": {response.text}"
+                    raise Exception(error_msg)
+                
                 response.raise_for_status()
                 
                 # Get the last message from the response

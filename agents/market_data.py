@@ -73,4 +73,6 @@ class MarketDataTool(AgentBase):
                 self.logger.error(f"Error fetching data for {asset}: {e}")
                 market_data[asset] = {"error": str(e)}
                 
+        # Log the market data before returning
+        self.logger.info(f"Market Data Retrieved: {market_data}")
         return market_data
