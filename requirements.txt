@@ -1,0 +1,11 @@
+openai
+streamlit>=1.29.0
+pandas
+loguru>=0.7.2
+python-dotenv>=1.0.0
+yfinance>=0.2.36
+newsapi-python
+requests>=2.31.0
+feedparser==6.0.10
+spacy>=3.7.2
+textblob>=0.17.1

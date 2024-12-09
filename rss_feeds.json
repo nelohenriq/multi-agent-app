@@ -1,0 +1,23 @@
+{
+  "tech": [
+    "https://www.wired.com/feed/rss",
+    "https://techcrunch.com/feed/",
+    "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest"
+  ],
+  "science": [
+    "https://www.sciencedaily.com/rss/all.xml",
+    "https://www.sciencenews.org/feed",
+    "https://www.science.org/rss/news_current.xml"
+  ],
+  "ai": [
+    "https://www.artificialintelligence-news.com/feed/",
+    "https://www.zdnet.com/topic/artificial-intelligence/rss.xml",
+    "https://news.mit.edu/rss/topic/artificial-intelligence2"
+  ],
+  "crypto": [
+    "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml",
+    "https://www.cryptonewsz.com/feed/",
+    "https://ambcrypto.com/feed/"
+  ],
+  "financial": ["https://techcrunch.com/feed/"]
+}
