@@ -11,6 +11,7 @@ from .news_fetcher import NewsFetcherTool
 from .sentiment_analyzer import SentimentAnalyzerTool
 from .market_data import MarketDataTool
 from .report_generator import ReportGeneratorTool
+from .market_data_analyzer import MarketDataAnalyzer
 
 
 class AgentManager:
@@ -34,7 +35,7 @@ class AgentManager:
             "SummarizeValidatorAgent": SummarizeValidatorAgent(
                 max_retries=max_retries, verbose=verbose
             ),
-            # New Financial Analysis Agents
+            # Financial Analysis Agents
             "NewsFetcherTool": NewsFetcherTool(
                 max_retries=max_retries, verbose=verbose
             ),
@@ -42,6 +43,9 @@ class AgentManager:
                 max_retries=max_retries, verbose=verbose
             ),
             "MarketDataTool": MarketDataTool(
+                max_retries=max_retries, verbose=verbose
+            ),
+            "MarketDataAnalyzer": MarketDataAnalyzer(
                 max_retries=max_retries, verbose=verbose
             ),
             "ReportGeneratorTool": ReportGeneratorTool(
