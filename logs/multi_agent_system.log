@@ -1739,3 +1739,94 @@ Potential Market Implications:
 The bullish trend in DOGE has significant implications for the wider crypto market and the DogeCoin community. This trend has already led to a surge in demand for DOGE, as more people become aware of the coin's unique qualities and potential. As investor confidence grows, there is a possibility that DOGE could reach new highs, potentially leading to further price growth and widespread adoption.
 
 In conclusion, Dogecoin has experienced significant price growth in recent months, with a current market cap of over $1 billion as of December 9, 2024. The bullish trend in DOGE has been met with overwhelming support from the market's sentiment analysis and potential to hit $0.72 as its next target. As investor confidence grows, there is a possibility that DOGE could reach new highs, potentially leading to further price growth and widespread adoption.
+2024-12-09T02:09:45.672391+0000 INFO Fetching RSS feed: https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml
+2024-12-09T02:09:47.101778+0000 INFO Fetching RSS feed: https://www.cryptonewsz.com/feed/
+2024-12-09T02:09:47.715520+0000 INFO Fetching RSS feed: https://ambcrypto.com/feed/
+2024-12-09T02:09:49.670145+0000 INFO 
+==================================================
+2024-12-09T02:09:49.671146+0000 INFO [ReportGeneratorTool] Sending message to Ollama:
+2024-12-09T02:09:49.671146+0000 INFO Model: tinyllama
+2024-12-09T02:09:49.671146+0000 INFO Temperature: 0.7
+2024-12-09T02:09:49.672145+0000 INFO Max tokens: 4000
+2024-12-09T02:09:49.672145+0000 INFO 
+Messages:
+2024-12-09T02:09:49.672145+0000 INFO 
+[SYSTEM]
+2024-12-09T02:09:49.673148+0000 INFO You are a professional financial analyst. Generate a comprehensive report based on the provided market data and news analysis. Focus on key trends, sentiment analysis, and potential market implications.
+2024-12-09T02:09:49.673148+0000 INFO 
+[USER]
+2024-12-09T02:09:49.673148+0000 INFO Market Data Summary:
+
+BTC-USD:
+Current Price: $99597.70
+Price Change (1y): 127.78%
+Period High: $103900.47
+Period Low: $38521.89
+Analysis Period: 2023-12-09 to 2024-12-09
+24h Volume: $48,939,679,744.00
+
+ETH-USD:
+Current Price: $3949.13
+Price Change (1y): 68.68%
+Period High: $4093.17
+Period Low: $2113.93
+Analysis Period: 2023-12-09 to 2024-12-09
+24h Volume: $22,791,735,296.00
+
+SOL-USD:
+Current Price: $232.34
+Price Change (1y): 221.54%
+Period High: $263.83
+Period Low: $64.37
+Analysis Period: 2023-12-09 to 2024-12-09
+24h Volume: $3,320,457,216.00
+
+News Analysis:
+
+Headline: Is a Bitcoin price correction coming? Assessing key levels
+Sentiment: {'score': 0.14, 'explanation': 'Positive sentiment in market discussion'}
+Related Asset: BTC-USD
+
+Headline: Ethereum whale transactions surge: Decoding the spike in large transfers
+Sentiment: {'score': 0.33, 'explanation': 'Movement: 300%'}
+Related Asset: ETH-USD
+
+Headline: Bitcoin vs. Gold: Which asset will dominate as the ultimate store of value?
+Sentiment: {'score': 0.32, 'explanation': 'Positive sentiment in market discussion'}
+Related Asset: BTC-USD
+
+Headline: Bitcoin: 5 reasons to invest in BTC before 2025
+Sentiment: {'score': 0.14, 'explanation': 'Price mentioned: $178K'}
+Related Asset: BTC-USD
+
+Headline: Ethereum ETFs see record $844 mln inflows – Will this boost ETH’s December targets?
+Sentiment: {'score': 0.14, 'explanation': 'Price mentioned: 844'}
+Related Asset: ETH-USD
+
+2024-12-09T02:09:49.675142+0000 INFO 
+==================================================
+2024-12-09T02:13:58.914400+0000 INFO 
+==================================================
+2024-12-09T02:13:58.914400+0000 INFO [ReportGeneratorTool] Ollama replied:
+2024-12-09T02:13:58.915390+0000 INFO 
+Based on the market data and news analyzes provided in the given text, the following analysis is conducted for each asset/pair:
+
+1. BTC-USD: The current price of Bitcoin is $99597.70, with a 127.78% price change over the last year. The period high and low are $38521.89 and $103900.47 respectively. Analyzing the sentiment score, the market is positive but not overly bullish. Related assets include ETH-USD ($3949.13), SOL-USD ($232.34), and BTC-USD ($3949.13).
+
+Headline: Is a Bitcoin price correction coming? Assessing key levels
+Sentiment: {'score': 0.14, 'explanaition': 'Positive sentiment in market discussion'}
+Related assets: BTC-USD ($3949.13)
+
+2. ETH-USD: The current price of Ethereum is $3949.13, with a 68.68% price change over the last year. The period high and low are $2113.93 and $2113.93 respectively. Analyzing the sentiment score, the market is bullish but not overly optimistic, with a 0.54% decline in price over the last week. Related assets include BTC-USD ($3949.13) and SOL-USD ($232.34).
+
+Headline: Is a Bitcoin price correction coming? Assessing key levels
+Sentiment: {'score': 0.33, 'explanaition': 'Positive sentiment in market discussion'}
+Related assets: BTC-USD ($3949.13)
+
+3. SOL-USD: The current price of Solana is $232.34, with a 221.54% price change over the last year. The period high and low are $64.37 and $64.37 respectively. Analyzing the sentiment score, the market is positive but not overly bullish. Related assets include BTC-USD ($3949.13), ETH-USD ($3949.13), and BTC-USD ($3949.13).
+
+Headline: Is a Bitcoin price correction coming? Assessing key levels
+Sentiment: {'score': 0.32, 'explanaition': 'Positive sentiment in market discussion'}
+Related assets: BTC-USD ($3949.13), ETH-USD ($3949.13)
+2024-12-09T02:13:58.916387+0000 INFO 
+==================================================

@@ -24,7 +24,7 @@ class AgentBase(ABC):
     def execute(self, *args, **kwargs):
         pass
 
-    def call_ollama(self, messages, max_tokens=150, temperature=0.7):
+    def call_ollama(self, messages, max_tokens=150, temperature=0.0):
         retries = 0
         while retries < self.max_retries:
             try:
